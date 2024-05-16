@@ -1,5 +1,5 @@
 
-:root {
+:root{
 
     .color1 { #4b538b }; 
     .color2 { #15191d };
@@ -7,5 +7,16 @@
     .color4 { #e45635 };
     .color5 { #d60257 };
 
+    --texto-claro: #15191d;
+    --texto-escuro: #e9e3d9;
+
+    --texto-titulo-claro: #15191d;
+    --texto-titulo-escuro: #e9e3d9;
+
+    --menu-fundo2: #4d4f61;
+    --menu-lateral: #15191d;
+    --menu-fundo1 : #e9c07d;
+    --cor4: #360e04;
+    --cor5: #d60257;
 
 }
