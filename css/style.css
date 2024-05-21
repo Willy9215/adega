@@ -4,8 +4,8 @@
     --texto-escuro: #15191d;
     --texto-claro: #e9e3d9;
 
-    --texto-titulo-claro: #15191d;
-    --texto-titulo-escuro: #e9e3d9;
+    --texto-titulo-escuro: #15191d;
+    --texto-titulo-claro: #e9e3d9;
     --texto-hover:#d60257;
 
     --menu-fundo2: #4d4f61;
@@ -20,12 +20,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
    /* color: #15191d; outro jeito de escolher a cor*/
-    color: var(--texto-escuro);
+    color: var(--texto-claro);
     background: var(--menu-fundo1);
 }
 
 a{
-    color: var(--texto-claro);
+    color: var(--texto-escuro);
     text-decoration: none;
 }
 
@@ -49,4 +49,53 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 15px;
     background: var(--menu-lateral);
     overflow-y: auto;
+}
+
+#header .perfil img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 2px solid var(--borda-clara);
+    box-shadow: 0px 0px 10px 0px var(--sombra-clara); /* sombra */
+}
+#header .perfil h1 {
+    font-size: 24px;
+    margin: 25px;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+    /* font-family: ; */
+}
+/* Caso coloquem Link no H1 
+#header .perfil h1 a, 
+#header .perfil h1 a:hover {
+    color: ;
+    text-decoration: none; }*/
+
+.perfil .social-links i {
+    font-size: 18px;
+    display: inline-block;
+    background: transparent;
+    color: var(--texto-claro);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px 0px var(--sombra-clara); /* sombra */
+}
+.perfil .social-links a:hover,
+.social-links i:hover {
+    font-size: 18px;
+    display: inline-block;
+    background: white;
+    color: black;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 0px 5px 0px var(--sombra-clara); /* sombra */
 }
