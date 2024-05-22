@@ -12,7 +12,7 @@
     --texto-claro: #c8d4db;
     --texto-hover: #218591;
     --texto-opaco: #81888c;
-
+    --texto-branco: #c8d4db;
     --cor-detalhes: #149ddd;
 
     --texto-titulo-claro: #38E0F2;
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero::before {
     content: "";
-    background: rgba(5, 13, 24, 0.555);
+    background: rgba(29, 40, 54, 0.555);
     position: absolute;
     top: 0;
     right: 0;
@@ -211,4 +211,17 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 2;
     min-width: 300px;
+}
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 150px;
+    color: var(--texto-branco);
+}
+#hero p span {
+    color: var(--texto-branco);
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--cor-detalhes);
 }
