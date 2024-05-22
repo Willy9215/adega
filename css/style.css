@@ -1,59 +1,57 @@
-/*variavel para as cores*/
+/* variavel para as cores  */ 
 :root{
+    
+    --fundo-menu-lateral: #3b021a;
+    --fundo-claro: #c8d4db;
+    --fundo-claro2: #2f3538;
 
-    --texto-escuro: #15191d;
-    --texto-claro: #e9e3d9;
+    --borda-clara: #38E0F2;
+    --borda-escura: #037F8C;
 
-    --texto-titulo-escuro: #15191d;
-    --texto-titulo-claro: #e9e3d9;
-    --texto-hover:#d60257;
-    --texto-opaco:#8a9197;
+    --texto-escuro: #161616;
+    --texto-claro: #c8d4db;
+    --texto-hover: #218591;
+    --texto-opaco: #81888c;
 
-    --cor-detalhes: #f3eed2;
+    --cor-detalhes: #149ddd;
 
-    --menu-fundo2: #4d4f61;
-    --menu-lateral: #4b0534;
-    --menu-fundo1 : #b0b7bb;
-    --cor4: #360e04;
-    --cor5: #d60257;
+    --texto-titulo-claro: #38E0F2;
+    --texto-titulo-escuro: #037F8C;
 
+    --sombra-clara: rgba(255, 255, 255, 1);
+    --sombra-escura: rgba(31, 31, 31, 0.1);
 }
-/*css geral*/
-
+/* css geral  */
 body {
     font-family: Arial, Helvetica, sans-serif;
-   /* color: #15191d; outro jeito de escolher a cor*/
+    /* color: #161616; */
     color: var(--texto-claro);
-    background: var(--menu-fundo1);
+    background: var(--fundo-claro);
 }
-
 a{
     color: var(--texto-escuro);
     text-decoration: none;
 }
-
 a:hover {
     color: var(--texto-hover);
-    text-decoration: none; /*retirar o underline*/
+    text-decoration: none; /* retirar underline */
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Times, serif;
 }
-/*cabeçalho*/
-
+/* cabeçalho */
 #header {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 320px;
     transition: all ease-in-out 0.5s;
-    z-index: 0;
+    z-index: 99; /**/
     padding: 0 15px;
-    background: var(--menu-lateral);
-    overflow-y: auto;
+    background: var(--fundo-menu-lateral);
+    overflow-y: auto; /*transbordar*/ 
 }
-
 #header .perfil img {
     margin: 15px auto;
     display: block;
@@ -72,9 +70,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Caso coloquem Link no H1 
 #header .perfil h1 a, 
 #header .perfil h1 a:hover {
-    color: ;
-    text-decoration: none; }*/
-
+    /* color: ;
+    text-decoration: none;
+} */
 .perfil .social-links i {
     font-size: 18px;
     display: inline-block;
@@ -95,15 +93,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     display: inline-block;
     background: white;
-    color: rgb(10, 10, 10);
+    color: black;
     margin-right: 5px;
     border-radius: 50%;
     width: 35px;
     height: 35px;
     box-shadow: 0px 0px 5px 0px var(--sombra-clara); /* sombra */
 }
-/* ajuste pora o corpo principal */
-
+/* ajuste para o corpo principal */
 #main {
     margin-left: 300px;
 }
@@ -114,24 +111,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1199px) {
     #header {
-        left: 300px;
+        left: -300px;
     }
     #main {
         margin-left: 0;
     }
-.container,
-.container-fluid {
-    padding-left: 12px;
-    padding-right: 12px;
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
-
-}
-/*menu desktop*/
-
+/** Menu Desktop **/
 .nav-menu {
-    padding: 10px 0 0 0;
+    padding: 30px 0 0 0;
 }
-.nav-menu * { /* aplicar regra aos filhos */
+.nav-menu * { 
     padding: 0;
     margin: 0;
     list-style: none;
@@ -169,8 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu li:hover>a i {
     color: var(--cor-detalhes);
 }
-
-/*menu mobile */
+/* Menu mobile */
 .mobile-nav-toggle {
     position: fixed;
     top: 15px;
@@ -196,16 +190,16 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
 }
 
-/*hero*/
+/* hero */
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/portfolio/fundo-hero.jpg"); top center;
+    background: url("../img/portfolio/fundo-hero.jpg") top center;
     background-size: cover;
 }
 #hero::before {
     content: "";
-    background: rgba(5, 13, 24, 0.3);
+    background: rgba(5, 13, 24, 0.555);
     position: absolute;
     top: 0;
     right: 0;
