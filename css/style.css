@@ -2,14 +2,14 @@
 :root{
     
     --fundo-menu-lateral: #3b021a;
-    --fundo-claro: #8c8f91;
+    --fundo-claro: #676869;
     --fundo-claro2: #2f3538;
 
     --borda-clara: #38E0F2;
     --borda-escura: #037F8C;
 
     --texto-escuro: #161616;
-    --texto-claro: #cdd7dd;
+    --texto-claro: #eaf1f7;
     --texto-hover: #218591;
     --texto-opaco: #81888c;
     --texto-branco: #c8d4db;
@@ -278,4 +278,33 @@ h1, h2, h3, h4, h5, h6 {
     #hero p {
         font-size: 25px;
     }
+}
+
+/* Seções Gerais */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    background: var(--fundo-claro)
+}
+.section-bg {
+    background: var(--fundo-claro);
+    color: var(--texto-claro);
+}
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--fundo-menu-lateral);
+    position: relative;
+}
+.section-title h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--cor-detalhes);
+    bottom: 0;
+    left: 0;
 }
