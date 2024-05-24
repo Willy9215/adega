@@ -2,14 +2,14 @@
 :root{
     
     --fundo-menu-lateral: #3b021a;
-    --fundo-claro: #c8d4db;
+    --fundo-claro: #8c8f91;
     --fundo-claro2: #2f3538;
 
     --borda-clara: #38E0F2;
     --borda-escura: #037F8C;
 
     --texto-escuro: #161616;
-    --texto-claro: #c8d4db;
+    --texto-claro: #cdd7dd;
     --texto-hover: #218591;
     --texto-opaco: #81888c;
     --texto-branco: #c8d4db;
@@ -39,6 +39,38 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* Botao back to top = Scroll */
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--cor-detalhes);
+    transition: all 1s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: var(--texto-claro);
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: var(--fundo-claro2);
+    color: var(--texto-claro);
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* cabeçalho */
 #header {
     position: fixed;
