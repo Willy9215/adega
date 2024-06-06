@@ -536,7 +536,7 @@ section {
     border-radius: 50%;
     transition: 0.5s;
     border: 5px solid var(--cor-detalhes);
-    box-shadow: 0 0 8px 2px white;
+    box-shadow: 0 0 8px 2px var(--fundo-menu-lateral);
 }
 .services .icon i {
     color: var(--texto-branco);
@@ -549,4 +549,17 @@ section {
 }
 .services .icon-box:hover .icon i {
     color: var(--fundo-claro2);
+}
+.services .title {
+
+    margin-left: 80px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--fundo-menu-lateral);
+}
+.services .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 16px;
 }
