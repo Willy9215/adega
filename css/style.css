@@ -586,7 +586,7 @@ section {
 }
 .depoimentos .depoimento-item h4 {
     font-size: 14px;
-    color: var(--texto-escuro);
+    color: var(--fundo-menu-lateral);
     margin: 0;
 }
 .depoimentos .depoimento-item .quote-icon-left,
@@ -621,8 +621,21 @@ section {
     height: 0;
     position: absolute;
     bottom: -20px;
-    left: calc(50%-20px);
-    border-top: 20px solid #149ddd;
+    left: calc(50% - 20px);
+    border-top: 20px solid var(--texto-branco);
     border-right: 20px solid transparent;
     border-left: 20px solid transparent;
 }
+.depoimentos .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--texto-branco);
+    border: 1px solid var(--cor-detalhes);
+}
+/*.depoimentos .swiper-pagination .swiper-pagination-bullet:hover{
+    background: var(--cor-detalhes);
+}*/ 
