@@ -676,8 +676,8 @@ section {
     font-size: 16px;
 }
 .contato .info i:hover {
-    background: var(--fundo-claro);
-    color: var(--texto-branco);
+    background: var(--texto-escuro);
+    color: var(--texto-escuro);
 }
 .contato .info .fone a:hover{
     color: var(--cor-detalhes);
